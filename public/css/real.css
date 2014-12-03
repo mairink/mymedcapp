@@ -1,0 +1,84 @@
+
+body {
+    background-color: #fff;
+    color: #000;
+    font-family: verdana,arial,helvetica,sans-serif;
+    font-size: 76%;
+    margin: 0;
+    padding: 0;
+}
+#content {
+    margin: 0;
+    padding: 4em 6em 2em;
+}
+.narrow1 {
+    line-height: 1.3em;
+    width: 50%;
+}
+.narrow2 {
+    line-height: 1.5em;
+    width: 50%;
+}
+a:link {
+}
+a:visited {
+}
+a:active {
+}
+a:hover {
+    text-decoration: underline;
+}
+h1 {
+    font-size: 2em;
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+h2 {
+    font-size: 1.7em;
+    font-weight: normal;
+    margin: 1.2em 0;
+}
+h3 {
+    font-size: 1.4em;
+    font-weight: normal;
+    margin: 1.2em 0;
+}
+h4 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 1.2em 0;
+}
+h5 {
+    font-size: 1em;
+    font-weight: bold;
+    margin: 1.2em 0;
+}
+h6 {
+    font-size: 0.8em;
+    font-weight: bold;
+    margin: 1.2em 0;
+}
+img {
+    border: 0 none;
+}
+ol, ul, li {
+    font-size: 1em;
+    margin-bottom: 0.1em;
+    margin-top: 0.2em;
+}
+p {
+    font-size: 1em;
+    line-height: 1.8em;
+    margin: 1.2em 0;
+}
+li > p {
+    margin-top: 0.2em;
+}
+pre {
+    font-family: monospace;
+    font-size: 1em;
+}
+strong, b {
+    font-weight: bold;
+}

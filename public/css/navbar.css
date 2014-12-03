@@ -1,0 +1,36 @@
+a.nav {
+  font-weight: bold;
+  color: #FFFFFF;
+  text-decoration: none
+}
+
+#nav-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-right: 10px;
+}
+
+#nav-menu li {
+  float: left;
+  margin: 0 0.15em;
+}
+
+#nav-menu li.rightLogout {
+  float: right;
+  margin: 0 0.15em;
+  padding-right: 10px;
+}
+
+#nav-menu li.right {
+  float: right;
+  margin: 0 0.15em;
+}
+
+#nav-menu {
+  clear: both;
+  padding-left: 1em;
+  overflow: hidden;
+  background: #AAB8E7;
+  width: 900px;
+}

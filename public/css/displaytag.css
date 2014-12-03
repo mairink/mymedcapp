@@ -1,0 +1,110 @@
+table.displayTable {
+  border: 1px solid #666;
+  width: 80%;
+  margin: 20px 0 20px 0 !important;
+}
+
+table.displayTable th,table.displayTable td {
+  padding: 2px 4px 2px 4px !important;
+  text-align: left;
+  vertical-align: top;
+}
+
+table.displayTable thead tr {
+  background-color: #fc0;
+}
+
+table.displayTable th.sorted {
+  background-color: orange;
+}
+
+table.displayTable th a,table.displayTable th a:visited {
+  color: black;
+  text-decoration: none
+}
+
+table.displayTable th a:hover {
+  text-decoration: underline;
+  color: #435DA9;
+}
+
+table.displayTable th.sorted a,table.displayTable th.sortable a {
+  background-position: right;
+  display: block;
+  width: 100%;
+}
+
+table.displayTable th.sortable a {
+  background-image: url(/portal/inc/images/arrow_off.png);
+  background-repeat: no-repeat;
+}
+
+table.displayTable th.order1 a {
+  background-image: url(/portal/inc/images/arrow_down.png);
+  background-repeat: no-repeat;
+}
+
+table.displayTable th.order2 a {
+  background-image: url(/portal/inc/images/arrow_up.png);
+  background-repeat: no-repeat;
+}
+
+table.displayTable tr.odd {
+  background-color: #fff
+}
+
+table.displayTable tr.tableRowEven,table.displayTable tr.even {
+  background-color: #fea
+}
+
+div.exportlinks {
+  background-color: #eee;
+  border: 1px dotted #999;
+  padding: 2px 4px 2px 4px;
+  margin: 2px 0 10px 0;
+  width: 79%;
+}
+
+span.export {
+  padding: 0 4px 1px 20px;
+  display: inline;
+  display: inline-block;
+  cursor: pointer;
+}
+
+span.excel {
+  background-image: url(../img/ico_file_excel.png);
+}
+
+span.csv {
+  background-image: url(../img/ico_file_csv.png);
+}
+
+span.xml {
+  background-image: url(../img/ico_file_xml.png);
+}
+
+span.pdf {
+  background-image: url(../img/ico_file_pdf.png);
+}
+
+span.rtf {
+  background-image: url(../img/ico_file_rtf.png);
+}
+
+span.pagebanner {
+  padding: 2px 4px 2px 4px;
+  margin-top: 10px;
+  border-bottom: none;
+  margin-bottom: -5px;
+}
+
+span.pagelinks {
+  padding: 2px 4px 2px 4px;
+  width: 95%;
+  margin-top: 10px;
+  display: block;
+  border-top: none;
+  margin-bottom: -5px;
+  text-align: center;
+}

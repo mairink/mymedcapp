@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+<title>HSE.ie Medical Card Application - Applicants Details</title>
+<style type="text/css" media="all" href="/css/style.css" rel="stylesheet">
+
+@import "file:///C:/Users/mairi_000/Documents/adiss/sspcc/css/calendar.css";
+@import "file:///C:/Users/mairi_000/Documents/adiss/sspcc/css/navbar.css";
+@import "file:///C:/Users/mairi_000/Documents/adiss/sspcc/css/tabber.css";
+@import "file:///C:/Users/mairi_000/Documents/adiss/sspcc/css/displaytag.css";
+@import "file:///C:/Users/mairi_000/Documents/adiss/sspcc/css/dk.css";
+@import "file:///C:/Users/mairi_000/Documents/adiss/sspcc/css/style.css";
+
+</style>
+
+<script type="text/javascript" src="file:///c:/Users/mairi_000/Documents/adiss/sspcc/javascript/tabber.js"></script>
+<script type="text/javascript" src="file:///c:/Users/mairi_000/Documents/adiss/sspcc/javascript/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="file:///c:/Users/mairi_000/Documents/adiss/sspcc/javascript/jquery-migrate-1.2.1.js"></script>
+<script type="text/javascript" src="file:///c:/Users/mairi_000/Documents/adiss/sspcc/javascript/dk.js"></script>
+<script type="text/javascript" src="file:///c:/Users/mairi_000/Documents/adiss/sspcc/javascript/jquery.cookie.js"></script>
+<script type="text/javascript" src="file:///c:/Users/mairi_000/Documents/adiss/sspcc/javascript/jquery.pnotify.min.js"></script>
+<script type="text/javascript" src="file:///c:/Users/mairi_000/Documents/adiss/sspcc/javascript/systemnotification.js"></script>
+<script type="text/javascript" src="file:///c:/Users/mairi_000/Documents/adiss/sspcc/javascript/main.js"></script>
+
+
+</head>
+<body>
+
+
+<script type="text/javascript">
+        function stopRKey(evt) {
+            var evt = (evt) ? evt : ((event) ? event : null);
+            var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null);
+            if ((evt.keyCode == 13) && (node.type=="text"))  {return false;}
+            if ((evt.keyCode == 13) && (node.type=="radio"))  {return false;}
+          }
+
+        document.onkeypress = stopRKey;
+        if (self != top) {
+            if (document.images)
+                top.location.replace(window.location.href);
+            else
+                top.location.href = window.location.href;
+        }
+   </script>
+
+
+</script>
+<div id="instruction">
+	<form id=payment>
+
+                        <fieldset>
+						 
+
+                            <h3>Instruction</h3>
+                            
+							
+							  	<ol>    
+							     <a class="longLabel"> Section A:  Please have details of your WEEKLY Income to hand </a>
+							
+									<p>Please answer the following questions about your weekly income and that of your spouse / partner:</p>
+								
+					
+						<br>Do you receive Social Security Payments from an EU state - other than Ireland?
+							<input checked="checked" name="RadioESP" type="radio" />Yes
+							<input name="RadioESP" type="radio" /> No<br />
+						
+							
+							<input type="radio" onclick="hide('liveWith')" value="Y" tabindex="19" name="RadioESP1">
+								Yes
+							<input type="radio" onclick="show('liveWith')" value="N" tabindex="20" name="RadioESP1">
+								No
+						
+				
+							<br></br>
+							<li>
+							Financial Source
+							Weekly Amount</th>
+            <select name="ssPayCodesApp[0].sourceCode" tabindex="1" class="codeDropdown"><option value="">(select financial source)</option>
+                  <option value="AM020">Social Welfare Payment from an EU State</option></select> 
+			
+           <br> </br>Please enter total amount per week 
+									
+
+            <input type="text" name="ssPayCodesApp[0].amount" tabindex="2" value="">
+               <br> </br>
+			   </li>
+
+              <input type="submit" tabindex="3" value="Remove Line" onclick="this.form.pagenum.value='removeSsAppSourceCode'; this.form.page.value='3'; this.form.delLine.value='0'">
+      
+
+        <input type="submit" tabindex="4" value="Add Line" onclick="this.form.pagenum.value='addSsAppSourceCode';">
+
+							</li>
+							</ol>
+
+             </fieldset>
+              
+             
+
+      </div>
+    </div>
+							
+							
+							
+							
+							
+         
+      
+       </ol>
+			</p>		
+
+
+			
+									<input name="Save" type="submit" value="submit" Onclick="displayMessage1()" /> 
+							
+							
+							<input name="Reset1" type="reset" value="reset" />
+				
+							
+							
+                        </fieldset>
+				</form>		
+                    </div>
+					</body>
+					</html>

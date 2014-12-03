@@ -1,0 +1,593 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  max-height: none;
+  overflow: visible;
+  margin: 0;
+  width: 100%;
+  background: #DDDDDD;
+}
+
+div.wrapper {
+  background: #DDDDDD;
+  height: auto !important; /* real browsers */
+  height: 100%; /* IE6: treaded as min-height*/
+  position: relative; /* needed for footer positioning*/
+  min-height: 100%; /* real browsers */
+}
+
+div.copyright { #
+  padding-top: 25px;
+  padding-bottom: 10px;
+  text-align: center;
+  clear: both;
+  position: absolute;
+  width: 900px;
+  bottom: 0; /* stick to bottom */
+}
+
+div.content {
+  padding-left: 8px;
+  padding-right: 8px;
+  padding: 1em 1em 5em; /* bottom padding for footer */
+  width: 900px;
+}
+
+div.head {
+  display: block;
+  position: static;
+  background: #AAB8E7;
+}
+
+div.header {
+  background: #AAB8E7;
+  padding-top: 8px;
+  padding-left: 1em;
+  padding-bottom: 2px;
+  overflow: hidden;
+}
+
+div.space {
+  background: white;
+  height: 1px;
+  clear: both;
+}
+
+hr.red {
+  color: red;
+  background: red;
+}
+
+a:hover {
+  color: #435DA9;
+  text-decoration: underline
+}
+
+.center {
+  text-align: center;
+}
+
+table.login {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  font-weight: bold;
+}
+
+div.tableright {
+  
+}
+
+div.head span.left {
+  width: 335px;
+  float: left;
+  padding-right: 3px;
+}
+
+div.head div.right {
+  padding-top: 6px;
+  padding-left: 3px;
+}
+
+img {
+  border-style: none;
+}
+
+.formChoiceLink {
+  width: 200px;
+}
+
+span.required { #
+  font-size: 150%; #
+  font-weight: bold;
+  color: red;
+}
+
+span.example {
+  font-weight: lighter;
+  font-size: smaller;
+}
+
+td.label {
+  width: 200px;
+}
+
+.longLabel {
+  width: 547px;
+  background: #E8E8E8;
+  padding: 5px;
+}
+
+div.wagesCal {
+  background: #E8E8E8;
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+td.panelHeading {
+  font-weight: bold;
+}
+
+th.codeHeading {
+  width: 450px;
+}
+
+.welcomeHighLight {
+  font-weight: bold;
+}
+
+.vlongLabel {
+  width: 700px;
+  background: #E8E8E8;
+  padding: 5px;
+}
+
+.personType {
+  font-weight: bold;
+  padding: 4px;
+}
+
+td.part4ETextArea {
+  width: 500px;
+}
+
+textarea.part4ETextArea {
+  width: 500px;
+  height: 270px;
+}
+
+.medappPartHeading {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.nextButton {
+  float: right;
+  padding-right: 3px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.processing {
+  float: right;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 7px;
+  margin-top: 5px;
+  background: none repeat scroll 0 0 white;
+  border: 1px solid #B5EAAA;
+}
+
+.previousButton {
+  float: left;
+  padding-left: 3px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.cancelButton {
+  padding-left: 3px;
+  padding-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cancelDiv {
+  clear: both;
+  width: 100%;
+  text-align: center;
+}
+
+#doneButton {
+  font-size: large;
+}
+
+.removeDepButton {
+  float: right;
+  padding-right: 3px;
+}
+
+.addDepButton {
+  padding-top: 5px;
+}
+
+.fieldError {
+  border: 2px solid red;
+}
+
+.codeFieldError {
+  border: 2px solid red;
+  width: 200px;
+}
+
+.fieldErrorLabel {
+  font-size: 0.8em;
+  color: #D1161D;
+}
+
+.codeDropdown {
+  width: 400px;
+}
+
+.dropDown {
+  width: 160px;
+}
+
+.docListDropDown {
+  width: 100%;
+}
+
+table.codeTable td {
+  vertical-align: top;
+  width: 400px;
+}
+
+/* From styles.css */
+.MainHeaderWhite {
+  font-size: 1.2em;
+  text-align: left;
+  font-weight: bold;
+  color: #FFFFFF;
+  padding-top: 5px;
+}
+
+.SecondHeaderWhite {
+  text-align: left;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.ShowErrorMessage { #
+  font-family: Arial;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #D1161D;
+}
+
+.errorMessage {
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: bold;
+  color: #D1161D;
+  line-height: 16px;
+}
+
+/* Test rounded headers */
+.b1h,.b2h,.b3h,.b4h,.b2bh,.b3bh,.b4bh {
+  font-size: 1px;
+  overflow: hidden;
+  display: block;
+}
+
+.b1h {
+  height: 1px;
+  background: black;
+  margin: 0 5px;
+}
+
+.b2h,.b2bh {
+  height: 1px;
+  background: #B5EAAA;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  margin: 0 3px;
+}
+
+.b3h,.b3bh {
+  height: 1px;
+  background: #B5EAAA;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  margin: 0 2px;
+}
+
+.b4h,.b4bh {
+  height: 2px;
+  background: #B5EAAA;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  margin: 0 1px;
+}
+
+.b2bh,.b3bh,.b4bh {
+  background: #B5EAAA;
+}
+
+.headh {
+  background: #B5EAAA;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.headh h3 {
+  margin: 0px 10px 0px 10px;
+  padding-bottom: 3px;
+}
+
+.contenth {
+  background: white;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.subContenth {
+  margin-left: 10px;
+  padding-top: 5px;
+  margin-right: 10px;
+  padding-bottom: 5px;
+}
+/* End test rounded headers */
+
+/* Test tooltip*/
+a.info {
+  position: relative; /*this is the key*/
+  z-index: 20;
+  color: #000;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+a.info:hover {
+  z-index: 25;
+  cursor: help;
+}
+
+a.info span.popup {
+  display: none;
+  z-index: 20;
+  border-radius: 3px;
+}
+
+a.info:hover span.popup { /*the span will display just on :hover state*/
+  display: inline-block;
+  position: static;
+  top: 2em;
+  line-height: 20px;
+border-radius: 3px;
+  right: 3em;
+  width: 15em;
+  border: 1px solid black;
+  background-color: #ddd;
+  color: #000;
+  text-align: center;
+  z-index: 25;
+  padding: 5px;
+}
+
+/* End Test tooltip*/
+
+/* Income guidelines */
+.incomeGuideLines .sectionHead {
+  font-size: large;
+  font-weight: bold;
+}
+
+.incomeGuideLines table {
+  border: thin solid black;
+  width: 100%;
+  border-collapse: collapse;
+  empty-cells: show;
+}
+
+.incomeGuideLines td,.incomeGuideLines th {
+  border: 1px solid black;
+  padding: 3px 5px 2px 5px;
+}
+
+.incomeGuideLines .leftcol {
+  font-weight: bold;
+  text-align: left;
+  background-color: #CCCCCC;
+}
+
+.incomeGuideLines .leftcolsub {
+  font-weight: normal;
+}
+
+.incomeGuideLines .rightcolhead {
+  width: 180px;
+}
+
+.incomeGuideLines .indent {
+  padding-left: 3em;
+}
+/* End income guidelines */
+.weeklyWarning {
+  background: none repeat scroll 0 0 #EE0000;
+  color: white;
+  padding: 5px;
+  width: 700px;
+}
+
+.weeklyWarningPart3 {
+  width: 547px;
+}
+
+#investDiv {
+  padding: 5px 0px 5px 10px;
+}
+
+#propPart {
+  padding: 5px 0px 5px 10px;
+}
+
+.outgoingWarningTable {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.outgoingWarningTable td,.outgoingWarningTable th {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.outgoingWarningTable tr:hover {
+  background-color: #D0DAFD;
+}
+
+/* Pnotify Styles */
+.ui-pnotify.eucookie {
+  background-color: #404040 !important;
+  background-image: none !important;
+  border: none !important;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+  z-index: 100;
+  top: auto;
+  bottom: 0;
+  right: 0;
+}
+
+.ui-pnotify.eucookie .ui-pnotify-container {
+  background-color: #404040 !important;
+  background-image: none !important;
+  border: none !important;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+  z-index: 100;
+  top: auto;
+  bottom: 0;
+  right: 0;
+}
+
+.ui-pnotify.eucookie .ui-pnotify-title,.ui-pnotify.eucookie .ui-pnotify-text {
+  font-family: Arial, Helvetica, sans-serif !important;
+  text-shadow: 2px 2px 3px black !important;
+  font-size: 10pt !important;
+  color: #FFF !important;
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+  line-height: 1 !important;
+  text-rendering: geometricPrecision !important;
+}
+
+.ui-pnotify .ui-widget .ui-pnotify-text a.link {
+  color: #FFFFFF;
+}
+/* -- Notice */
+.ui-pnotify {
+  top: 25px;
+  right: 25px;
+  position: absolute;
+  height: auto;
+  /* Ensures notices are above everything */
+  z-index: 9999;
+}
+/* Hides position: fixed from IE6 */
+html>body .ui-pnotify {
+  position: fixed;
+}
+
+.ui-pnotify .ui-pnotify-shadow {
+  -webkit-box-shadow: 0px 2px 10px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow: 0px 2px 10px rgba(50, 50, 50, 0.5);
+  box-shadow: 0px 2px 10px rgba(50, 50, 50, 0.5);
+}
+
+.ui-pnotify-container {
+  background-position: 0 0;
+  padding: .8em;
+  height: 100%;
+  margin: 0;
+}
+
+.ui-pnotify-sharp {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
+.ui-pnotify-closer,.ui-pnotify-sticker {
+  float: right;
+  margin-left: .2em;
+}
+
+.ui-pnotify-title {
+  display: block;
+  margin-bottom: .4em;
+}
+
+.ui-pnotify-text {
+  display: block;
+}
+
+.ui-pnotify-icon,.ui-pnotify-icon span {
+  display: block;
+  float: left;
+  margin-right: .2em;
+}
+/* -- History Pulldown */
+.ui-pnotify-history-container {
+  position: absolute;
+  top: 0;
+  right: 18px;
+  width: 70px;
+  border-top: none;
+  padding: 0;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-top-left-radius: 0;
+  border-top-left-radius: 0;
+  -webkit-border-top-right-radius: 0;
+  -moz-border-top-right-radius: 0;
+  border-top-right-radius: 0;
+  /* Ensures history container is above notices. */
+  z-index: 10000;
+}
+
+.ui-pnotify-history-container .ui-pnotify-history-header {
+  padding: 2px;
+}
+
+.ui-pnotify-history-container button {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+}
+
+.ui-pnotify-history-container .ui-pnotify-history-pulldown {
+  display: block;
+  margin: 0 auto;
+}
+
+.ui-pnotify .picon {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 17px;
+  height: 17px;
+}
+
+.ui-pnotify-title {
+  line-height: 17px;
+  min-height: 17px;
+}

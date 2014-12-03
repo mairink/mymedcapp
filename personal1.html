@@ -1,0 +1,280 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+<title>HSE.ie Medical Card Application - Applicants Details</title>
+<style type="text/css" media="all" href="/css/style.css" rel="stylesheet">
+
+@import "file:///C:/Users/mairi_000/Documents/adiss/sspcc/css/calendar.css";
+@import "file:///C:/Users/mairi_000/Documents/adiss/sspcc/css/navbar.css";
+@import "file:///C:/Users/mairi_000/Documents/adiss/sspcc/css/tabber.css";
+@import "file:///C:/Users/mairi_000/Documents/adiss/sspcc/css/displaytag.css";
+@import "file:///C:/Users/mairi_000/Documents/adiss/sspcc/css/dk.css";
+@import "file:///C:/Users/mairi_000/Documents/adiss/sspcc/css/style.css";
+
+</style>
+<script type="text/javascript" src="file:///c:/Users/mairi_000/Documents/adiss/sspcc/javascript/tabber.js"></script>
+<script type="text/javascript" src="file:///c:/Users/mairi_000/Documents/adiss/sspcc/javascript/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="file:///c:/Users/mairi_000/Documents/adiss/sspcc/javascript/jquery-migrate-1.2.1.js"></script>
+<script type="text/javascript" src="file:///c:/Users/mairi_000/Documents/adiss/sspcc/javascript/dk.js"></script>
+<script type="text/javascript" src="file:///c:/Users/mairi_000/Documents/adiss/sspcc/javascript/jquery.cookie.js"></script>
+<script type="text/javascript" src="file:///c:/Users/mairi_000/Documents/adiss/sspcc/javascript/jquery.pnotify.min.js"></script>
+<script type="text/javascript" src="file:///c:/Users/mairi_000/Documents/adiss/sspcc/javascript/systemnotification.js"></script>
+<script type="text/javascript" src="file:///c:/Users/mairi_000/Documents/adiss/sspcc/javascript/main.js"></script>
+</head>
+<body>
+
+
+<div id="instruction">
+	<form id=payment>
+
+                        <fieldset>
+						 
+
+                            <h3>Instruction</h3>
+                            <p>
+							Please enter your personal details to enable us to speedily process your application.
+							</p>
+					
+			
+				<ol>
+					
+					<li>
+							<label >PPS Number</label>						
+							<input name = "PpsNumber" type="text" id = "PPS">
+								<a class="info" href="#"> <img src="images/help_blue.png" height="25" />
+								<span class="popup"> Enter your PPS Number </span> </a>
+					</li>
+					<li>
+							<label >Date of Birth</label>
+							<input name = "DOB" type="date">
+								<a class="info" href="#"> <img src="images/help_blue.png" height="25" />
+								<span class="popup"> Enter your Date of Birth </span> </a>
+					</li>
+					<li>
+					
+					<label >Surname          </label>
+							<input name = "LastName" type="text" id="surname">
+							<a class="info" href="#"> <img src="images/help_blue.png" height="25" />
+								<span class="popup"> Enter your family name </span> </a>
+
+					
+					
+							
+					</li>
+					<li>	<label >First name       </label>
+							<input name = "FirstName" type="text" id="firstname">
+							<a class="info" href="#"> <img src="images/help_blue.png" height="25" />
+								<span class="popup"> Enter your First name </span> </a>
+					
+					</li>
+					<li>	<label >Email Address    </label>
+							<input name ="email1" type="email">
+							<a class="info" href="#"> <img src="images/help_blue.png" height="25" />
+								<span class="popup"> We need your email address</span> </a>
+					
+					</li>
+					<li>	<label >Confirm Email Address </label>
+							<input name ="email2" type="email">
+							<a class="info" href="#"> <img src="images/help_blue.png" height="25" />
+								<span class="popup"> Confirm your email address </span> </a>
+					
+					</li>
+					<li>
+							<label >Birth Surname </label>
+							<input name = "BirthName" type="text" id = "myBirthName">
+							<a class="info" href="#"> <img src="images/help_blue.png" height="25" />
+								<span class="popup"> Enter your birth surname</span> </a>
+					
+					</li>
+					<li>
+							<label >Mother's Birth Surname </label>
+								<input name = "data" type="text" id="myMumName">
+							<a class="info" href="#"> <img src="images/help_blue.png" height="25" />
+								<span class="popup"> Mother's birth surname</span> </a>
+					
+							<p id="fromEvent">Waiting for data via <code>storage</code> event...</p>
+
+					</li>
+				</ol>			
+
+
+				
+			<fieldset>
+						<br><legend> Gender: </legend>
+							<p><input  id="male"  type="radio" name="RadioG" value ="Male" checked="checked" />
+							<label for ="male" >Male</label></p>
+							<p><input  id="female"  type="radio" name="RadioG" value ="Female"  />
+							<label for ="female" >Female</label></p>
+							<br>
+						
+							</fieldset>
+							<br>
+						
+							<br>Are you an Irish Citizen?
+							
+							<input checked="checked" name="RadioC" type="radio" />Yes
+							<input name="RadioC" type="radio" /> No<br />
+							<br>Do you have a medical card?
+							<input checked="checked" name="RadioMC" type="radio" />Yes
+							<input name="RadioMC" type="radio" /> No<br />
+							<br>Is there a spouse/partner relevant to the application?
+							<input checked="checked" name="RadioSP" type="radio" />Yes
+							<input name="RadioSP" type="radio" /> No<br />
+							
+							<br>Are there dependants relevant to this application?
+							<input checked="checked" name="RadioDep" type="radio" />Yes
+							<input name="RadioDep" type="radio" /> No<br />
+
+							
+							<br>Do you live alone?
+							<input checked="checked" name="RadioMS" type="radio" id = "alone"/>Yes, I live alone
+							<input name="RadioMS" type="radio" /> No, I do not live alone<br />
+							
+									
+										  
+							<br>Marital Status
+							
+							<select name="maritalStatus" id="mStatusDropDown" class="dropDown">
+							<option value="">(Select Marital Status)</option>
+								<option value="I">Civil Partnership</option>
+								<option value="C">Cohabiting </option>
+								<option value="D">Divorced</option>
+								<option value="M">Married</option>
+								<option value="R">Religious</option>
+								<option value="P">Separated</option>
+								<option value="S">Single</option>
+								<option value="W">Widowed</option></select> 
+								
+								</br>
+								<br> </br>
+					 
+				<ol>
+				<li>
+					<label >Number of Dependants </label>	
+					<input type="number" name="someid" id = "number"/>
+					</li>
+					<li>
+							<label >Address Line 1</label>							
+							<input name = "Add1" type="text">
+					</li>
+					<li>
+							<label >Address Line 2</label>
+							<input name = "Add2" type="text">
+					</li>
+					<li>
+							<label >Town</label>
+							<input name = "Town" type="text">
+					</li>
+					
+					
+				</ol>	
+				<br>Please select the county you live in?</br>
+							
+							<select name="address.county" id = "address.county" ><option value="">(select County)</option>
+                
+								<option value="Carlow">Carlow</option>
+								<option value="Cavan">Cavan</option>
+								<option value="Clare">Clare</option>
+								<option value="Cork">Cork</option>
+								<option value="Donegal">Donegal</option>
+								<option value="Dublin 1">Dublin 1</option>
+								<option value="Dublin 2">Dublin 2</option>
+								<option value="Dublin 3">Dublin 3</option>
+								<option value="Dublin 4">Dublin 4</option>
+								<option value="Dublin 5">Dublin 5</option>
+								<option value="Dublin 6">Dublin 6</option>
+								<option value="Dublin 6W">Dublin 6W</option>
+								<option value="Dublin 7">Dublin 7</option>
+								<option value="Dublin 8">Dublin 8</option>
+								<option value="Dublin 9">Dublin 9</option>
+								<option value="Dublin 10">Dublin 10</option>
+								<option value="Dublin 11">Dublin 11</option>
+								<option value="Dublin 12">Dublin 12</option>
+								<option value="Dublin 13">Dublin 13</option>
+								<option value="Dublin 14">Dublin 14</option>
+								<option value="Dublin 15">Dublin 15</option>
+								<option value="Dublin 16">Dublin 16</option>
+								<option value="Dublin 17">Dublin 17</option>
+								<option value="Dublin 18">Dublin 18</option>
+								<option value="Dublin 20">Dublin 20</option>
+								<option value="Dublin 22">Dublin 22</option>
+								<option value="Dublin 24">Dublin 24</option>
+								<option value="Dublin">Dublin</option>
+								<option value="Galway">Galway</option>
+								<option value="Kerry">Kerry</option>
+								<option value="Kildare">Kildare</option>
+								<option value="Kilkenny">Kilkenny</option>
+								<option value="Laois">Laois</option>
+								<option value="Leitrim">Leitrim</option>
+								<option value="Limerick">Limerick</option>
+								<option value="Longford">Longford</option>
+								<option value="Louth">Louth</option>
+								<option value="Mayo">Mayo</option>
+								<option value="Meath">Meath</option>
+								<option value="Monaghan">Monaghan</option>
+								<option value="Offaly">Offaly</option>
+								<option value="Roscommon">Roscommon</option>
+								<option value="Sligo">Sligo</option>
+								<option value="Tipperary">Tipperary</option>
+                
+								<option value="Waterford">Waterford</option>
+								<option value="Westmeath">Westmeath</option>
+								<option value="Wexford">Wexford</option>
+								<option value="Wicklow">Wicklow</option>
+								</select>
+								
+           		<br>Please select the Local Health Authority you live in?
+		
+							
+					<select name="lhoPat"  id="lhoPatDropDown" class="dropDown"><option value="">(Select LHO)</option>
+						<option value="29">Carlow/Kilkenny</option>
+						<option value="13">Cavan / Monaghan</option>
+						<option value="21">Clare</option>
+						<option value="25">Cork - North Lee</option>
+						<option value="24">Cork - South Lee</option>
+						<option value="19">Donegal</option>
+						<option value="11">Dublin North Central</option>
+						<option value="3">Dublin South City</option>
+						<option value="2">Dublin South East</option>
+						<option value="4">Dublin South West</option>
+						<option value="5">Dublin West</option>
+						<option value="1">Dun Laoghaire</option>
+						<option value="16">Galway</option>
+						<option value="27">Kerry</option>
+						<option value="6">Kildare / West Wicklow</option>
+						<option value="8">Laois / Offaly</option>
+						<option value="23">Limerick</option>
+						<option value="9">Longford / Westmeath</option>
+						<option value="14">Louth</option>
+						<option value="17">Mayo</option>
+						<option value="15">Meath</option>
+						<option value="28">North Cork</option>
+						<option value="12">North Dublin</option>
+						<option value="22">North Tipp./East Limerick</option>
+						<option value="10">North West Dublin</option>
+						<option value="18">Roscommon</option>
+						<option value="20">Sligo / Leitrim</option>
+						<option value="31">South Tipperary</option>
+						<option value="30">Waterford</option>
+						<option value="26">West Cork</option>
+						<option value="32">Wexford</option>
+						<option value="7">Wicklow</option>
+						</select> 
+						
+        	<br> </br>
+							
+							
+							<input name="Save" type="submit" value="submit" Onclick="displayMessage2()" /> 
+							
+							
+							
+							<input name="Reset1" type="reset" value="reset" />
+				
+							
+							
+                        </fieldset>
+				</form>		
+                    </div>
+					</body>
+					</html>

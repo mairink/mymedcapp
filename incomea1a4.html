@@ -1,0 +1,256 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+<title>HSE.ie Medical Card Application - Applicants Details</title>
+<style type="text/css" media="all" href="/css/style.css" rel="stylesheet">
+
+@import "file:///C:/Users/mairi_000/Documents/adiss/sspcc/css/calendar.css";
+@import "file:///C:/Users/mairi_000/Documents/adiss/sspcc/css/navbar.css";
+@import "file:///C:/Users/mairi_000/Documents/adiss/sspcc/css/tabber.css";
+@import "file:///C:/Users/mairi_000/Documents/adiss/sspcc/css/displaytag.css";
+@import "file:///C:/Users/mairi_000/Documents/adiss/sspcc/css/dk.css";
+@import "file:///C:/Users/mairi_000/Documents/adiss/sspcc/css/style.css";
+
+</style>
+
+<script type="text/javascript" src="file:///c:/Users/mairi_000/Documents/adiss/sspcc/javascript/tabber.js"></script>
+<script type="text/javascript" src="file:///c:/Users/mairi_000/Documents/adiss/sspcc/javascript/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="file:///c:/Users/mairi_000/Documents/adiss/sspcc/javascript/jquery-migrate-1.2.1.js"></script>
+<script type="text/javascript" src="file:///c:/Users/mairi_000/Documents/adiss/sspcc/javascript/dk.js"></script>
+<script type="text/javascript" src="file:///c:/Users/mairi_000/Documents/adiss/sspcc/javascript/jquery.cookie.js"></script>
+<script type="text/javascript" src="file:///c:/Users/mairi_000/Documents/adiss/sspcc/javascript/jquery.pnotify.min.js"></script>
+<script type="text/javascript" src="file:///c:/Users/mairi_000/Documents/adiss/sspcc/javascript/systemnotification.js"></script>
+<script type="text/javascript" src="file:///c:/Users/mairi_000/Documents/adiss/sspcc/javascript/main.js"></script>
+
+
+</head>
+<body>
+
+
+<script type="text/javascript">
+        function stopRKey(evt) {
+            var evt = (evt) ? evt : ((event) ? event : null);
+            var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null);
+            if ((evt.keyCode == 13) && (node.type=="text"))  {return false;}
+            if ((evt.keyCode == 13) && (node.type=="radio"))  {return false;}
+          }
+
+        document.onkeypress = stopRKey;
+        if (self != top) {
+            if (document.images)
+                top.location.replace(window.location.href);
+            else
+                top.location.href = window.location.href;
+        }
+   </script>
+
+
+</script>
+<div id="instruction">
+	<form id=payment>
+
+                        <fieldset>
+						 
+
+                            <h3>Instruction</h3>
+                            
+							
+							  	<ol>    
+							     <a class="longLabel"> Section A:  Please have details of your WEEKLY Income to hand </a>
+							
+									<p>Please answer the following questions about your weekly income and that of your spouse / partner:</p>
+								
+					
+					<br>Do you have an income from Self Employment?
+						
+							
+							<input type="radio" onclick="hide('liveWith')" value="Y" tabindex="19" name="RadioSE">
+								Yes
+							<input type="radio" onclick="show('liveWith')" value="N" tabindex="20" name="RadioSE">
+								No
+						
+				
+							<br></br>
+							<li>
+							
+							
+							  <h3>
+      Self Employment
+      details
+      (
+      Applicant
+      )
+    </h3>
+  </div>
+  <div class="contenth">
+    <div class="subContenth">
+      <div class="detailsBlock">
+
+        
+
+        
+        
+          <p>
+            As a self employed person you complete Form 11 annually and submit to Revenue for assessment. Revenue assess the Form 11 and may determine no return of income is required for a set period and issue a Non Liable Notification Letter. Alternatively revenue will issue a Notice of Assessment which is required to determine your net weekly income for this online medical card application.
+          </p>
+          <p>
+            You can enter the net weekly income amount or alternatively click on "Show Calculator" and use it to calculate the weekly income amount. Simply type in the amounts from your notice of assessment and click the "Calculate" button.
+          </p>
+          <p>
+            When you have finished typing in the net weekly income amount or have used the calculator please click on "Save and Return"
+          </p>
+        
+
+
+        <p>
+          
+          
+            Enter net <b>weekly</b> amount or use the calculator
+          
+
+          <input type="text" name="sePayAmountApp" maxlength="10" tabindex="1" value="">
+          
+            <a id="showCalc" href="#">Show Calculator</a>
+          
+
+        </p>
+        
+          <div class="wagesCal" id="seCalc">
+            <table class="codeTable">
+              <tr>
+                <td colspan="2" class="panelHeading">Panel 1</td>
+              </tr>
+              <tr>
+                <td>Assessments to income tax <br /> NB Please exclude taxed interest amounts, distributions and any social welfare income amounts from the Panel 1 total. Social Welfare payments should be captured separately under Social Welfare Income 
+                  </td>
+                <td><input type="text" name="seBreakDownApp.panel1" tabindex="2" value=""> <a
+                  class="info" href="#"> <img src="/portal/medapponline/inc/images/help_yellow.png" height="20" />
+                    <span class="popup"> Type in the value on your Notice of Assessment for Assessments to income tax.
+                  </span>
+                </a></td>
+              </tr>
+
+              <tr>
+                <td colspan="2" class="panelHeading">Panel 2</td>
+              </tr>
+              <tr>
+                <td>Capital allowances/losses </td>
+                <td><input type="text" name="seBreakDownApp.panel2" tabindex="3" value=""> <a
+                  class="info" href="#"> <img src="/portal/medapponline/inc/images/help_yellow.png" height="20" />
+                    <span class="popup"> Type in the value on your Notice of Assessment for Capital allowances/losses.
+                  </span>
+                </a></td>
+              </tr>
+
+              <tr>
+                <td colspan="2" class="panelHeading">Panel 3</td>
+              </tr>
+              <tr>
+                <td>Personal allowances </td>
+                <td>Not used in Calculation </td>
+              </tr>
+
+              <tr>
+                <td colspan="2" class="panelHeading">Panel 4</td>
+              </tr>
+              <tr>
+                <td>Total payments made under deduction of tax </td>
+                <td><input type="text" name="seBreakDownApp.panel4" tabindex="5" value=""> <a
+                  class="info" href="#"> <img src="/portal/medapponline/inc/images/help_yellow.png" height="20" />
+                    <span class="popup"> Type in the value on your Notice of Assessment for Total payments made under deduction of tax.
+                  </span>
+                </a></td>
+              </tr>
+
+              <tr>
+                <td colspan="2" class="panelHeading">Panel 5</td>
+              </tr>
+              <tr>
+                <td>credits/reliefs set against tax on income </td>
+                <td><input type="text" name="seBreakDownApp.panel5" tabindex="6" value=""> <a
+                  class="info" href="#"> <img src="/portal/medapponline/inc/images/help_yellow.png" height="20" />
+                    <span class="popup"> Type in the value on your Notice of Assessment for credits/reliefs set against tax on income. 
+                  </span>
+                </a></td>
+              </tr>
+
+              <tr>
+                <td colspan="2" class="panelHeading">Panel 6</td>
+              </tr>
+              <tr>
+                <td>PRSI/levies self </td>
+                <td><input type="text" name="seBreakDownApp.panel6" tabindex="7" value=""> <a
+                  class="info" href="#"> <img src="/portal/medapponline/inc/images/help_yellow.png" height="20" />
+                    <span class="popup"> Type in the value on your Notice of Assessment for PRSI/levies self
+                  </span>
+                </a></td>
+              </tr>
+
+              <tr>
+                <td colspan="2" class="panelHeading">Panel 7</td>
+              </tr>
+              <tr>
+                <td>PRSI/levies spouse </td>
+                <td><input type="text" name="seBreakDownApp.panel7" tabindex="8" value=""> <a
+                  class="info" href="#"> <img src="/portal/medapponline/inc/images/help_yellow.png" height="20" />
+                    <span class="popup"> Type in the value on your Notice of Assessment for PRSI/levies spouse
+                  </span>
+                </a></td>
+              </tr>
+
+              <tr>
+                <td colspan="2" class="panelHeading">Panel 8</td>
+              </tr>
+              <tr>
+                <td>Other credits/reliefs </td>
+                <td>Not used in Calculation </td>
+              </tr>
+
+            </table>
+            <input type="submit" tabindex="9" value="Calculate" onclick="this.form.pagenum.value='performSeCalc'; this.form.page.value='4'">
+            <input type="submit" tabindex="10" value="Clear Calculator" onclick="this.form.pagenum.value='clearSeCalc'; this.form.page.value='3'" id="clearCalc">
+          </div>
+        
+      </div>
+    </div>
+
+  </div>
+
+							</li>
+
+             
+              
+              <td><input type="submit" value="Remove Line" onclick="this.form.pagenum.value='removeSwAppSourceCode'; this.form.page.value='3'; this.form.delLine.value='0'"></td>
+            </tr>
+          
+        </table>
+
+        <input type="submit" value="Add Line" onclick="this.form.pagenum.value='addSwAppSourceCode';">
+
+      </div>
+    </div>
+							
+							
+							
+							
+							
+         
+      
+       </ol>
+			</p>		
+
+
+			
+									<input name="Save" type="submit" value="submit" Onclick="displayMessage1()" /> 
+							
+							
+							<input name="Reset1" type="reset" value="reset" />
+				
+							
+							
+                        </fieldset>
+				</form>		
+                    </div>
+					</body>
+					</html>
